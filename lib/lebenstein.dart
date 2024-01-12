@@ -1,5 +1,3 @@
-library levenshtein;
-
 import 'dart:math';
 
 class CalcLevenshtein {
@@ -11,8 +9,8 @@ class CalcLevenshtein {
     return result;
   }
 
-  /// 10レーベンシュタインで10よりもソートしたインデックスが大きくなったら、リターン
-  static List<String> useChangeIndex(
+  /// レーベンシュタインで10よりもソートしたインデックスが大きくなったら、リターン
+  static List<String> changeIndex(
       List<int> levenshteinIndex, List<String> data) {
     int maxValue = levenshteinIndex
         .reduce((value, element) => value > element ? value : element);

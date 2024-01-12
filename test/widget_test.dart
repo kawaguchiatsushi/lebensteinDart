@@ -15,7 +15,7 @@ void main() {
     String query = "日本";
     List<String> damiydata = ["日本人", "日本語版", "日本", "アメリカン"];
     var indexs = CalcLevenshtein.calc(query, damiydata);
-    expect(CalcLevenshtein.useChangeIndex(indexs, damiydata),
+    expect(CalcLevenshtein.changeIndex(indexs, damiydata),
         ["日本", "日本人", "日本語版", "アメリカン"]);
   });
   // testWidgets('Counter increments smoke test', (WidgetTester tester) async {

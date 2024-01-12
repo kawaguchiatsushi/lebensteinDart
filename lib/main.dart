@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
           /// lebenstein
           ///
           var index = CalcLevenshtein.calc(query, damiydata);
-          var indices = CalcLevenshtein.useChangeIndex(index, damiydata);
+          var indices = CalcLevenshtein.changeIndex(index, damiydata);
           print(indices);
         },
         tooltip: 'Lebenstein',
